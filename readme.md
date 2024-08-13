@@ -11,7 +11,7 @@ Subsequently, the MPO stage is proposed to optimize multiple desired properties 
 Setup the required environment using requirements.txt with python. While in the project directory run:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 
 ## Train the model

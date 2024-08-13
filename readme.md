@@ -37,7 +37,7 @@ python AdversarialLearning.py --run_name 'adversarial_learning' --device 'cuda:0
 4. Multi-property optimizing
 
 ```bash
-python MultiPropertyOptim.py --run_name 'MPO_GAN_v9' --epoch 1000 --device 'cuda:0' --dataset_max_size 1000 --epoch 700 --gen_lr 0.00005 --dis_lr 0.00005 --ur 0.25 --ugr 0.7 --with_toxin 1 --with_cdhit 1 --with_stable_update 1 --amp_threshold 0.8 --toxin_threshold 0.7 --cdhit_threshold 0.6
+python MultiPropertyOptim.py --run_name 'MPOGAN' --epoch 1000 --device 'cuda:0' --dataset_max_size 1000 --epoch 700 --gen_lr 0.00005 --dis_lr 0.00005 --ur 0.25 --ugr 0.7 --with_toxin 1 --with_cdhit 1 --with_stable_update 1 --amp_threshold 0.8 --toxin_threshold 0.7 --cdhit_threshold 0.6
 ```
 
 ## Generate AMP candidates

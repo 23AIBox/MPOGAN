@@ -125,7 +125,7 @@ def get_fasta_dataset(file_path):
 def get_csv_dataset(file_path):
     '''Load csv dataset'''
     df = pd.read_csv(file_path)
-    df = df[df.Sequence.str.len().between(SEQ_LEN[0], SEQ_LEN[1])]  # 限制序列长度
+    df = df[df.Sequence.str.len().between(SEQ_LEN[0], SEQ_LEN[1])]
     all_sequences = df.Sequence.to_numpy().tolist()
     all_sequences = remove_abnormal_aas(all_sequences)
     return all_sequences
@@ -214,7 +214,7 @@ def create_run_dir(run_name: str = "default_run"):
     '''Create run directory'''
 
     if run_name == "":
-        raise ValueError("run_name字段不能为空")
+        raise ValueError("run_name cannot be none")
 
     if os.path.exists('./logs/' + run_name):
         os.system('rm -rf ./logs/' + run_name)
@@ -290,8 +290,6 @@ def train_generator_PG(gen, gen_opt, dis, num_batches, dataset_size, device):
     for _ in range(num_batches):
 
         s = gen.sample(BATCH_SIZE * 2)
-
-        # 待修改
         inp, target, target_seqs = prepare_generator_batch(
             s, start_letter=START_LETTER, device=device)
 

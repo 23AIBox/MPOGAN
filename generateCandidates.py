@@ -3,7 +3,6 @@ from MyUtils import generate_seqs, seqs_to_file
 
 
 def main(model_id, num_outputs, run_name):
-    run_name = 'MPOGAN_finetuning'
     output_file_name = f'epoch{model_id}_outputs_{num_outputs}.fasta'
 
     fbseqgan_seqs = generate_seqs(run_name,

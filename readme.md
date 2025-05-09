@@ -45,18 +45,3 @@ python MultiPropertyOptim.py --run_name 'MPOGAN' --epoch 1000 --device 'cuda:0' 
 ```bash
 python generateCandidates.py --model_id 700 --num_outputs 50000 --run_name MPOGAN_finetuning
 ```
-
-## Reference
-
-If you find MPOGAN useful, please consider citing: 
-
-```
-@article{liu2024multi,
-  title={A Multi-Property Optimizing Generative Adversarial Network for de novo Antimicrobial Peptide Design},
-  author={Liu, Jiaming and Cui, Tao and Wang, Tao and Zeng, Xi and Niu, Yinbo and Jiao, Shaoqing and Lu, Dazhi and Wang, Jun and Xiao, Shuyuan and Xie, Dongna and others},
-  journal={bioRxiv},
-  pages={2024--11},
-  year={2024},
-  publisher={Cold Spring Harbor Laboratory}
-}
-```
